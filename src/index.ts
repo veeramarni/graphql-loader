@@ -42,7 +42,8 @@ function makeSchema(fileNames: string[]): Promise<string> {
 
 function parseSchema(fileData: string) {
   const doc = parse(fileData)
-  return buildASTSchema(doc)
+  //return buildASTSchema(doc)
+  return doc
 }
 
 function getGlob(pattern: string): Promise<string[]> {
